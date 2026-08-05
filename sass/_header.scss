@@ -3,7 +3,8 @@ html, body {
   max-width: 100%;
 }
 .header{
-   background-color: #fcf5ed ;
+   
+   background-color: transparent;
    border: 1px solid lightgrey;
    &__container{
       display: flex;
@@ -22,7 +23,7 @@ html, body {
       }
 
       @media (max-width: 375px){
-         height: 15vw;
+         height: 10vw;
       }
    }
    &__logo{
@@ -35,7 +36,7 @@ html, body {
          height: 10vw;
       }
       @media (max-width: 375px){
-         height: 15vw;
+         height: 10vw;
       }
    }
 }

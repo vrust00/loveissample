@@ -38,4 +38,49 @@
     
     }
 
+@font-face {
+    font-family: 'Loki';
+    src: url('../fonts/Loki.eot');
+    src: url('../fonts/Loki.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Loki.woFFGoodPro') format('woFFGoodPro'),
+    url('../fonts/Loki.ttf') format('truetype');
+    font-weight: 200;
+    
+    }
+@font-face {
+    font-family: 'Pequena';
+    src: url('../fonts/PequenaNeo-Regular.eot');
+    src: url('../fonts/PequenaNeo-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PequenaNeo-Regular.woFFGoodPro') format('woFFGoodPro'),
+    url('../fonts/PequenaNeo-Regular.ttf') format('truetype');
+    font-weight: 100;
+    
+    }
 
+    @font-face {
+    font-family: 'Pequena';
+    src: url('../fonts/PequenaNeo-Bold.eot');
+    src: url('../fonts/PequenaNeo-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PequenaNeo-Bold.woFFGoodPro') format('woFFGoodPro'),
+    url('../fonts/PequenaNeo-Bold.ttf') format('truetype');
+    font-weight: 200;
+    
+    }
+    @font-face {
+    font-family: 'Pequena';
+    src: url('../fonts/PequenaNeo-ExtraBold.eot');
+    src: url('../fonts/PequenaNeo-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PequenaNeo-ExtraBold.woFFGoodPro') format('woFFGoodPro'),
+    url('../fonts/PequenaNeo-ExtraBold.ttf') format('truetype');
+    font-weight: 300;
+    
+    }
+    @font-face {
+    font-family: 'Pequena';
+    src: url('../fonts/PequenaNeo-Black.eot');
+    src: url('../fonts/PequenaNeo-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PequenaNeo-Black.woFFGoodPro') format('woFFGoodPro'),
+    url('../fonts/PequenaNeo-Black.ttf') format('truetype');
+    font-weight: 400;
+    
+    }

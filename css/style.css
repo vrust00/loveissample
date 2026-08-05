@@ -86,13 +86,43 @@ table {
   src: url("../fonts/FFGoodPro-Ultra.eot?#iefix") format("embedded-opentype"), url("../fonts/FFGoodPro-Ultra.woFFGoodPro") format("woFFGoodPro"), url("../fonts/FFGoodPro-Ultra.ttf") format("truetype");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Loki";
+  src: url("../fonts/Loki.eot");
+  src: url("../fonts/Loki.eot?#iefix") format("embedded-opentype"), url("../fonts/Loki.woFFGoodPro") format("woFFGoodPro"), url("../fonts/Loki.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Pequena";
+  src: url("../fonts/PequenaNeo-Regular.eot");
+  src: url("../fonts/PequenaNeo-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PequenaNeo-Regular.woFFGoodPro") format("woFFGoodPro"), url("../fonts/PequenaNeo-Regular.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Pequena";
+  src: url("../fonts/PequenaNeo-Bold.eot");
+  src: url("../fonts/PequenaNeo-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PequenaNeo-Bold.woFFGoodPro") format("woFFGoodPro"), url("../fonts/PequenaNeo-Bold.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Pequena";
+  src: url("../fonts/PequenaNeo-ExtraBold.eot");
+  src: url("../fonts/PequenaNeo-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PequenaNeo-ExtraBold.woFFGoodPro") format("woFFGoodPro"), url("../fonts/PequenaNeo-ExtraBold.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Pequena";
+  src: url("../fonts/PequenaNeo-Black.eot");
+  src: url("../fonts/PequenaNeo-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/PequenaNeo-Black.woFFGoodPro") format("woFFGoodPro"), url("../fonts/PequenaNeo-Black.ttf") format("truetype");
+  font-weight: 400;
+}
 html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
 
 .header {
-  background-color: #fcf5ed;
+  background-color: transparent;
   border: 1px solid lightgrey;
 }
 .header__container {
@@ -112,7 +142,7 @@ html, body {
 }
 @media (max-width: 375px) {
   .header__heart {
-    height: 15vw;
+    height: 10vw;
   }
 }
 .header__logo {
@@ -129,52 +159,83 @@ html, body {
 }
 @media (max-width: 375px) {
   .header__logo {
-    height: 15vw;
+    height: 10vw;
   }
 }
 
 .main {
-  font-family: "FFGoodPro";
-  text-align: center;
+  font-family: "Loki";
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  background-position: center;
+  background-size: 220vw;
   background-attachment: fixed;
   background-image: url("../images/background_main.webp");
-  padding-top: 10vw;
-  padding-bottom: 15vw;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
   border-bottom: 1px solid lightgrey;
 }
-.main__title {
-  font-weight: 300;
-  font-size: 7vw;
-  width: 70vw;
-  letter-spacing: 10%;
+.main__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
   margin-left: auto;
   margin-right: auto;
 }
 @media (max-width: 768px) {
-  .main__title {
+  .main__wrapper {
     width: 90vw;
     font-size: 10vw;
   }
 }
+.main__loveislog {
+  width: 50%;
+}
 .main__subtitle {
+  -webkit-text-stroke: 2px #000000;
+  font-family: "Pequena";
   margin-top: 20px;
-  font-weight: 100;
-  font-size: 2vw;
+  font-weight: 200;
+  font-size: 3vw;
+  letter-spacing: 10%;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 27%;
+  padding-bottom: 2vw;
 }
 @media (max-width: 768px) {
   .main__subtitle {
     width: 90vw;
     font-size: 7vw;
   }
+}
+.main__text {
+  font-family: "Pequena";
+  font-size: 4vw;
+  color: white;
+  -webkit-text-stroke: 2px #000000;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 32%;
+  letter-spacing: 5%;
+  width: 40%;
+  text-align: right;
+  padding-bottom: 5vw;
+}
+@media (max-width: 768px) {
+  .main__text {
+    width: 90vw;
+    font-size: 7vw;
+  }
+}
+.main__title-img {
+  width: 30vw;
+}
+.main__characters {
+  margin-top: 10px;
+  width: 20%;
 }
 
 .first-date {

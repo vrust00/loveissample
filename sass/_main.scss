@@ -7,7 +7,7 @@
    left: 0;
    background-repeat: no-repeat;
    background-position:center;
-   background-size: 220vw;
+   background-size: 100vw;
    background-attachment: fixed;
    background-image: url('../images/background_main.webp');
    
@@ -21,15 +21,14 @@
    &__wrapper{
       
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
        width: 65vw;
        
-       margin-left: auto;
-       margin-right: auto;
+       margin-left: 10%;
       @media (max-width: 768px){
-         width: 90vw;
-         font-size: 10vw;
+         width: 65vw;
+         
       }
 
    }
@@ -46,12 +45,12 @@
        font-size: 3vw;
        letter-spacing: 10%;
        width: fit-content;
-      margin-left: 27%;
+      margin-left: 10%;
        padding-bottom: 2vw;
        
       @media (max-width: 768px){
-         width: 90vw;
-         font-size: 7vw;
+         -webkit-text-stroke: 1.5px #000000;
+         font-size: 4vw;
       }
    }
    &__text{
@@ -62,14 +61,14 @@
        color:white;
        -webkit-text-stroke: 2px #000000;
        width: fit-content;
-       margin-left: 32%;
+       margin-left: 15%;
        letter-spacing: 5%;
        width: 40%;
        text-align: right;
        padding-bottom: 5vw;
       @media (max-width: 768px){
-         width: 90vw;
-         font-size: 7vw;
+         -webkit-text-stroke: 1.5px #000000;
+         font-size: 5vw;
       }
    }
    &__title-img{

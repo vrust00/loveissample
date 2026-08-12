@@ -1,10 +1,11 @@
 .video-collage {
   position: relative;
-  background-image: url('../images/video_collage.webp');
+  
+  background-image: url('../images/background.png');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150vw;
-  height: 80vw;
+  background-position: start;
+  background-size: 100vw;
+  height: 55vw;
 
 
   
@@ -14,11 +15,19 @@
   }
 
   
+  &__bg{
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: fit-content;
+   }
 
   &__wrapper {
     position: absolute;
-    top: 16%;
-    gap: 10%;
+    top: 10%;
+    gap: 15%;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -53,10 +62,10 @@
     position: relative;
     height: 50%;
     display: block;
-    transform: rotate(5deg) translateY(50%);
+    transform: rotate(5deg) translateY(70%);
     
     &:first-child{
-      transform: rotate(-3deg);
+      transform: rotate(-3deg) translateY(50%);
     }
     &:last-child{
       transform: rotate(-5deg) translateY(100%);

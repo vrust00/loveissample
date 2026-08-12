@@ -122,7 +122,9 @@ html, body {
 }
 
 .header {
-  background-color: transparent;
+  background-image: url("../images/background_main.png");
+  background-position: center;
+  background-size: 80vw;
   border: 1px solid lightgrey;
 }
 .header__container {
@@ -165,16 +167,26 @@ html, body {
 
 .main {
   font-family: "Loki";
+  position: relative;
   top: 0;
   left: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw;
-  background-attachment: fixed;
-  background-image: url("../images/background_main3.webp");
+  background-size: 110vw;
+  background-image: url("../images/background_main.png");
+  height: 48.8vw;
   padding-top: 5vw;
   padding-bottom: 2vw;
   border-bottom: 1px solid lightgrey;
+}
+.main__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .main__wrapper {
   display: flex;
@@ -192,6 +204,7 @@ html, body {
   width: 50%;
 }
 .main__subtitle {
+  z-index: 10;
   -webkit-text-stroke: 2px #000000;
   font-family: "Pequena";
   margin-top: 20px;
@@ -322,53 +335,37 @@ html, body {
     opacity: 0;
   }
 }
-.roses {
+.photo-booth {
   position: relative;
-  height: 80vw;
-  background-image: url("../images/roses-bg.webp");
+  height: 55vw;
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw;
 }
 @media (max-width: 768px) {
-  .roses {
+  .photo-booth {
     background-size: 180vw;
     height: 156vw;
   }
 }
-.roses__title {
+.photo-booth__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.photo-booth__title {
   font-family: "FFGoodPro";
   font-weight: 100;
   font-size: 4vw;
   text-align: center;
   padding-top: 4vw;
 }
-.roses__rose-l {
-  position: absolute;
-  z-index: 10;
-  width: 30%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  bottom: 15%;
-  animation: roses-rotate-l 10s ease-in-out alternate infinite;
-}
-.roses__rose-r {
-  position: absolute;
-  right: 0;
-  bottom: 15%;
-  z-index: 10;
-  width: 30%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  animation: roses-rotate-r 10s ease-in-out alternate infinite;
-}
-.roses__rose-img {
+.photo-booth__rose-img {
   background-color: lightgray;
   position: absolute;
   top: 40.5vw;
@@ -380,7 +377,7 @@ html, body {
      object-fit: cover;
   z-index: -2;
 }
-.roses__rose-img:first-child {
+.photo-booth__rose-img:first-child {
   top: 48vw;
   left: 34.2vw;
   width: 18vw;
@@ -388,7 +385,7 @@ html, body {
   transform: translate(-50%, -50%) rotate(-20.5deg);
   z-index: -1;
 }
-.roses__rose-img:last-child {
+.photo-booth__rose-img:last-child {
   top: 48vw;
   left: 64.2vw;
   width: 17.2vw;
@@ -397,20 +394,20 @@ html, body {
   z-index: -1;
 }
 @media (max-width: 768px) {
-  .roses__rose-img {
+  .photo-booth__rose-img {
     top: 81vw;
     left: 48.5vw;
     width: 31vw;
     height: 31vw;
   }
-  .roses__rose-img:first-child {
+  .photo-booth__rose-img:first-child {
     top: 94vw;
     left: 22.3vw;
     width: 31.1vw;
     height: 31vw;
     transform: translate(-50%, -50%) rotate(-20.5deg);
   }
-  .roses__rose-img:last-child {
+  .photo-booth__rose-img:last-child {
     top: 94vw;
     left: 75.45vw;
     width: 31vw;
@@ -419,20 +416,20 @@ html, body {
   }
 }
 @media (max-width: 375px) {
-  .roses__rose-img {
+  .photo-booth__rose-img {
     top: 81vw;
     left: 48vw;
     width: 31.2vw;
     height: 31vw;
   }
-  .roses__rose-img:first-child {
+  .photo-booth__rose-img:first-child {
     top: 93vw;
     left: 22.1vw;
     width: 31.1vw;
     height: 31vw;
     transform: translate(-50%, -50%) rotate(-20.5deg);
   }
-  .roses__rose-img:last-child {
+  .photo-booth__rose-img:last-child {
     top: 94vw;
     left: 73.3vw;
     width: 31vw;
@@ -674,11 +671,11 @@ html, body {
 }
 .video-collage {
   position: relative;
-  background-image: url("../images/video_collage.webp");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150vw;
-  height: 80vw;
+  background-position: start;
+  background-size: 100vw;
+  height: 55vw;
 }
 @media (max-width: 450px) {
   .video-collage {
@@ -686,10 +683,19 @@ html, body {
     height: 125vw;
   }
 }
+.video-collage__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 .video-collage__wrapper {
   position: absolute;
-  top: 16%;
-  gap: 10%;
+  top: 10%;
+  gap: 15%;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -726,10 +732,10 @@ html, body {
   position: relative;
   height: 50%;
   display: block;
-  transform: rotate(5deg) translateY(50%);
+  transform: rotate(5deg) translateY(70%);
 }
 .video-collage__sample:first-child {
-  transform: rotate(-3deg);
+  transform: rotate(-3deg) translateY(50%);
 }
 .video-collage__sample:last-child {
   transform: rotate(-5deg) translateY(100%);

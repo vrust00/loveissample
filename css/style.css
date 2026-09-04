@@ -68,6 +68,50 @@ table {
   src: url("../fonts/Soledago.eot?#iefix") format("embedded-opentype"), url("../fonts/Soledago.woFFGoodPro") format("woFFGoodPro"), url("../fonts/Soledago.ttf") format("truetype");
 }
 .main__bg {
+  z-index: -1;
+  position: absolute;
   width: 100%;
   height: auto;
+}
+.main__slogan {
+  width: 30%;
+  padding-top: 30%;
+  margin-left: 5.5%;
+  font-size: 2.5vw;
+  color: #871E2B;
+}
+.main__name {
+  font-family: "Soledago";
+  font-size: 5vw;
+  color: #4B2429;
+}
+.main__name:first-of-type {
+  margin-top: 35%;
+  margin-left: 46%;
+}
+.main__name:last-of-type {
+  margin-left: 61%;
+}
+.main__and {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "Soledago";
+  margin-left: 60%;
+  font-size: 3vw;
+  color: #4B2429;
+}
+.main__photo {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+.main__photo:nth-of-type(1) {
+  z-index: -3;
+  width: 70%;
+  right: 0;
+}
+.main__photo:nth-of-type(2) {
+  top: 110%;
+  width: 50%;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,78 @@
 .main{
    &__bg{
+      z-index: -1;
+      position: absolute;
       width: 100%;
       height: auto;
+   }
+   &__slogan{
+      width: 30%;
+      padding-top: 30%;
+      margin-left: 5.5%;
+      font-size: 2.5vw;
+      color:#871E2B;
+   }
+   &__name{
+      font-family: 'Soledago';
+      
+      font-size: 5vw;
+      color:#4B2429;
+
+      &:first-of-type{
+         margin-top: 35%;
+         margin-left: 46%;
+      }
+      &:last-of-type{
+         
+         margin-left: 61%;
+      }
+   }
+   &__and{
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-family: 'Soledago';
+      margin-left: 60%;
+      font-size: 3vw;
+      color:#4B2429;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   &__photo{
+      position: absolute;
+      top:0;
+      
+      z-index: -2;
+
+      &:nth-of-type(1){
+         z-index: -3;
+         width: 70%;
+         right: 0;
+      }
+      &:nth-of-type(2){
+         top:110%;
+         width: 50%;
+         left: 0;
+      }
    }
 }

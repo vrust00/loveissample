@@ -100,6 +100,20 @@ table {
   font-size: 3vw;
   color: #4B2429;
 }
+.main__title-tv {
+  margin-top: 50rem;
+  color: #4B2429;
+  font-size: 2.5vw;
+}
+.main__title-eng-tv {
+  color: #4B2429;
+}
+.main__subtitle-tv {
+  color: #4B2429;
+}
+.main__subtitle-eng-tv {
+  color: #4B2429;
+}
 .main__photo {
   position: absolute;
   top: 0;
@@ -111,7 +125,44 @@ table {
   right: 0;
 }
 .main__photo:nth-of-type(2) {
-  top: 111%;
+  z-index: -3;
+  top: 55.7vw;
   width: 50%;
   left: 0;
+}
+.main__photo:nth-of-type(3) {
+  top: 260%;
+  width: 20%;
+  left: 1%;
+  transform: rotate(15deg);
+}
+.main__photo:nth-of-type(4) {
+  top: 286%;
+  width: 20%;
+  left: 26%;
+  transform: rotate(-15deg);
+}
+.main__photo:nth-of-type(5) {
+  z-index: -2;
+  top: 225%;
+  width: 19%;
+  left: 48%;
+  transform: rotate(-13deg);
+}
+.main__photo:nth-of-type(6) {
+  z-index: -2;
+  top: 238%;
+  width: 21%;
+  left: 72%;
+  transform: rotate(17deg);
+}
+.main__video {
+  position: absolute;
+  z-index: -2;
+  height: auto;
+}
+.main__video:nth-of-type(1) {
+  top: 340%;
+  width: 25%;
+  left: 28%;
 }/*# sourceMappingURL=style.css.map */

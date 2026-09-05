@@ -156,6 +156,13 @@ table {
   font-family: "Soledago";
   color: #4B2429;
 }
+.main__timer-nums {
+  gap: 20px;
+  display: flex;
+}
+.main__timer-labels {
+  display: flex;
+}
 .main__photo {
   position: absolute;
   top: 0;

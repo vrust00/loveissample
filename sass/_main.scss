@@ -37,9 +37,11 @@
    }
 
    &__title-tv{
-      margin-top: 50vw;
+      margin-top: 95vw;
+      margin-left: 5%;
       color:#4B2429;
-      font-size: 2.5vw;
+      font-size: 3vw;
+      width: fit-content;
       @media (max-width:768px) {
             top:128vw;
          }
@@ -50,7 +52,12 @@
    }
 
    &__title-eng-tv{
+      font-size: 3vw;
+      margin-left: 5%;
+      margin-top: 1vw;
+      font-family: 'Soledago';
       color:#4B2429;
+      width: fit-content;
       @media (max-width:768px) {
             top:128vw;
          }
@@ -61,6 +68,11 @@
    }
 
    &__subtitle-tv{
+      margin-top: 35vw;
+      margin-left: 25%;
+      width: fit-content;
+      text-align: right;
+      font-size: 3vw;
       color:#4B2429;
       @media (max-width:768px) {
             
@@ -72,6 +84,13 @@
    }
 
    &__subtitle-eng-tv{
+      margin-top: 1vw;
+      margin-left: 30%;
+      width: fit-content;
+      text-align: right;
+      font-size: 3vw;
+      
+      font-family: 'Soledago';
       color:#4B2429;
       @media (max-width:768px) {
             
@@ -200,9 +219,15 @@
       height: auto;
 
       &:nth-of-type(1){
-         top:340%;
+         top:183vw;
          width: 25%;
          left: 28%;
-      }
-   }
+         @media (max-width:768px) {
+            top:180vw;
+         }
+         @media (max-width:450px) {
+            top:175vw;
+         }
+      
+      }}
 }

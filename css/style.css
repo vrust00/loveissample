@@ -101,12 +101,32 @@ table {
   color: #4B2429;
 }
 .main__title-tv {
-  margin-top: 50rem;
+  margin-top: 50vw;
   color: #4B2429;
   font-size: 2.5vw;
 }
+@media (max-width: 768px) {
+  .main__title-tv {
+    top: 128vw;
+  }
+}
+@media (max-width: 450px) {
+  .main__title-tv {
+    top: 126vw;
+  }
+}
 .main__title-eng-tv {
   color: #4B2429;
+}
+@media (max-width: 768px) {
+  .main__title-eng-tv {
+    top: 128vw;
+  }
+}
+@media (max-width: 450px) {
+  .main__title-eng-tv {
+    top: 126vw;
+  }
 }
 .main__subtitle-tv {
   color: #4B2429;
@@ -121,40 +141,88 @@ table {
 }
 .main__photo:nth-of-type(1) {
   z-index: -3;
-  width: 70%;
+  width: 72%;
   right: 0;
 }
 .main__photo:nth-of-type(2) {
   z-index: -3;
-  top: 55.7vw;
+  top: 55vw;
   width: 50%;
   left: 0;
+  clip-path: polygon(0% 0%, 70% 0%, 100% 30%, 100% 100%, 0% 100%, 0 0);
+}
+@media (max-width: 450px) {
+  .main__photo:nth-of-type(2) {
+    top: 50vw;
+  }
 }
 .main__photo:nth-of-type(3) {
-  top: 260%;
-  width: 20%;
+  top: 130vw;
+  width: 21%;
   left: 1%;
   transform: rotate(15deg);
 }
+@media (max-width: 768px) {
+  .main__photo:nth-of-type(3) {
+    top: 128vw;
+  }
+}
+@media (max-width: 450px) {
+  .main__photo:nth-of-type(3) {
+    top: 126vw;
+  }
+}
 .main__photo:nth-of-type(4) {
-  top: 286%;
-  width: 20%;
+  top: 143vw;
+  width: 21%;
   left: 26%;
   transform: rotate(-15deg);
 }
+@media (max-width: 768px) {
+  .main__photo:nth-of-type(4) {
+    top: 140.8vw;
+  }
+}
+@media (max-width: 450px) {
+  .main__photo:nth-of-type(4) {
+    top: 138vw;
+  }
+}
 .main__photo:nth-of-type(5) {
   z-index: -2;
-  top: 225%;
+  top: 112.2vw;
   width: 19%;
-  left: 48%;
+  left: 47%;
   transform: rotate(-13deg);
+}
+@media (max-width: 768px) {
+  .main__photo:nth-of-type(5) {
+    top: 110vw;
+    width: 20%;
+  }
+}
+@media (max-width: 450px) {
+  .main__photo:nth-of-type(5) {
+    top: 106vw;
+    width: 22%;
+  }
 }
 .main__photo:nth-of-type(6) {
   z-index: -2;
-  top: 238%;
-  width: 21%;
-  left: 72%;
+  top: 118vw;
+  width: 25%;
+  left: 71%;
   transform: rotate(17deg);
+}
+@media (max-width: 768px) {
+  .main__photo:nth-of-type(6) {
+    top: 115vw;
+  }
+}
+@media (max-width: 450px) {
+  .main__photo:nth-of-type(6) {
+    top: 115vw;
+  }
 }
 .main__video {
   position: absolute;

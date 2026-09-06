@@ -39,20 +39,41 @@
    </video>
    
    <div class="main__timer">
+      <h1 class="main__timer-title">Вместе уже</h1>
       <div class="main__timer-nums">
-         <div class="main__timer-number" id="days">00</div>
-         <div class="main__timer-number" id="hours">00</div>
-         <div class="main__timer-number" id="minutes">00</div>
+         <div class="main__timer-number" id="years">00</div>:
+         <div class="main__timer-number" id="months">00</div>:
+         <div class="main__timer-number" id="days">00</div>:
+         <div class="main__timer-number" id="hours">00</div>:
+         <div class="main__timer-number" id="minutes">00</div>:
          <div class="main__timer-number" id="seconds">00</div>
       </div>
       <div class="main__timer-labels">
-         <div class="main__timer-label">ДНЕЙ</div>
-         <div class="main__timer-label">ЧАСОВ</div>
-         <div class="main__timer-label">МИНУТ</div>
-         <div class="main__timer-label">СЕКУНД</div>
+         <div class="main__timer-label" id="years-label">ЛЕТ</div>
+         <div class="main__timer-label" id="months-label">МЕСЯЦЕВ</div>
+         <div class="main__timer-label" id="days-label">ДНЕЙ </div>
+         <div class="main__timer-label" id="hours-label">ЧАСОВ </div>
+         <div class="main__timer-label" id="minutes-label">МИНУТ </div>
+         <div class="main__timer-label" id="seconds-label">СЕКУНД</div>
       </div>
    </div>
    <script src="js\timer.js"></script>
 
+
+   <div class="main__photoboth">
+      
+      <button class="main__photoboth-btn" id="photoboth-btn">Печать</button>
+      <div class="main__photoboth-container hide"  id="photoline">
+         <img src="images\photo-line.svg" alt="" class="main__photoline">
+         <img src="images\photo6.jpg" alt="" class="main__photoboth-img">
+         <img src="images\photo6.jpg" alt="" class="main__photoboth-img">
+         <img src="images\photo6.jpg" alt="" class="main__photoboth-img">
+         <img src="images\photo6.jpg" alt="" class="main__photoboth-img">
+      </div>
+      
+      <script src="js\photoboth.js"></script>
+   </div>
+   
+   
 </body>
 </html>

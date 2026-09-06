@@ -119,16 +119,6 @@ table {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 768px) {
-  .main__title-tv {
-    top: 128vw;
-  }
-}
-@media (max-width: 450px) {
-  .main__title-tv {
-    top: 126vw;
-  }
-}
 .main__title-eng-tv {
   font-size: 3vw;
   margin-left: 5%;
@@ -139,16 +129,6 @@ table {
   width: fit-content;
   position: relative;
   z-index: 2;
-}
-@media (max-width: 768px) {
-  .main__title-eng-tv {
-    top: 128vw;
-  }
-}
-@media (max-width: 450px) {
-  .main__title-eng-tv {
-    top: 126vw;
-  }
 }
 .main__subtitle-tv {
   margin-top: 35vw;
@@ -179,7 +159,7 @@ table {
   z-index: 0;
 }
 .main__photo:nth-of-type(1) {
-  width: 72%;
+  width: 70%;
   right: 0;
 }
 .main__photo:nth-of-type(2) {
@@ -279,6 +259,27 @@ table {
     top: 175vw;
   }
 }
+.main__title-collage {
+  margin-top: 22vw;
+  margin-left: 2%;
+  color: white;
+  font-size: 2vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
+.main__title-eng-collage {
+  font-size: 6vw;
+  margin-left: 2%;
+  margin-top: 1vw;
+  font-family: "Soledago";
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
 
 .main__photoboth-btn {
   background-color: #7a1111;
@@ -297,6 +298,11 @@ table {
 }
 .main__photoboth-btn:hover {
   background-color: #a51b1b;
+}
+@media (max-width: 768px) {
+  .main__photoboth-btn {
+    margin-top: 43.5vw;
+  }
 }
 
 .main__photoboth-container {
@@ -388,8 +394,4 @@ table {
 
 .main__timer-label {
   width: 9ch;
-}
-
-html, body {
-  overflow-x: clip;
 }/*# sourceMappingURL=style.css.map */

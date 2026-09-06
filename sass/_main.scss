@@ -53,12 +53,7 @@
     width: fit-content;
     position: relative;
     z-index: 2;
-    @media (max-width: 768px) {
-      top: 128vw;
-    }
-    @media (max-width: 450px) {
-      top: 126vw;
-    }
+    
   }
 
   &__title-eng-tv {
@@ -70,12 +65,7 @@
     width: fit-content;
     position: relative;
     z-index: 2;
-    @media (max-width: 768px) {
-      top: 128vw;
-    }
-    @media (max-width: 450px) {
-      top: 126vw;
-    }
+    
   }
 
   &__subtitle-tv {
@@ -116,7 +106,7 @@
     z-index: 0;                     // ← все фото на 0
 
     &:nth-of-type(1) {
-      width: 72%;
+      width: 70%;
       right: 0;
     }
     &:nth-of-type(2) {
@@ -204,7 +194,39 @@
       }
     }
   }
+  &__title-collage {
+    
+    margin-top: 22vw;
+    margin-left: 2%;
+    color: white;
+    font-size: 2vw;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    // @media (max-width: 768px) {
+    //   top: 22vw;
+    // }
+    // @media (max-width: 450px) {
+    //   top: 22vw;
+    // }
+  }
+
+  &__title-eng-collage {
+    font-size: 6vw;
+    margin-left: 2%;
+    margin-top: 1vw;
+    font-family: 'Soledago';
+    color: white;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+   
+  }
 }
+
+
+
+
 
 // ====== КНОПКА И КОНТЕЙНЕР ======
 .main__photoboth-btn {
@@ -213,17 +235,22 @@
   border: transparent;
   cursor: pointer;
   border-radius: 10px;
-  margin-top: 49.5vw;
+  margin-top: clamp(29vw,49.5vw,60vw);
   margin-left: 10%;
   font-size: 2vw;
   color: white;
   width: 14%;
   height: 3vw;
-  position: relative;               // для z-index
+  position: relative;                 // для z-index
   z-index: 2;                       // ← поверх фона
   &:hover {
     background-color: #a51b1b;
   }
+
+  @media (max-width: 768px) {
+        margin-top: clamp(20vw,43.5vw,50vw);
+      }
+      
 }
 
 .main__photoboth-container {
@@ -317,3 +344,6 @@
 .main__timer-label {
   width: 9ch;
 }
+
+
+

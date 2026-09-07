@@ -67,6 +67,30 @@ table {
   src: url("../fonts/Soledago.eot");
   src: url("../fonts/Soledago.eot?#iefix") format("embedded-opentype"), url("../fonts/Soledago.woFFGoodPro") format("woFFGoodPro"), url("../fonts/Soledago.ttf") format("truetype");
 }
+@font-face {
+  font-family: "PFAgoraSansPro";
+  src: url("../fonts/PFAgoraSansPro-Thin.eot");
+  src: url("../fonts/PFAgoraSansPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Thin.woff") format("woff"), url("../fonts/PFAgoraSansPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "PFAgoraSansPro";
+  src: url("../fonts/PFAgoraSansPro-Light.eot");
+  src: url("../fonts/PFAgoraSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Light.woff") format("woff"), url("../fonts/PFAgoraSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "PFAgoraSansPro";
+  src: url("../fonts/PFAgoraSansPro-Medium.eot");
+  src: url("../fonts/PFAgoraSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Medium.woff") format("woff"), url("../fonts/PFAgoraSansPro-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PFAgoraSansPro";
+  src: url("../fonts/PFAgoraSansPro-Bold.eot");
+  src: url("../fonts/PFAgoraSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSansPro-Bold.woff") format("woff"), url("../fonts/PFAgoraSansPro-Bold.ttf") format("truetype");
+  font-weight: 500;
+}
 .main {
   position: relative;
 }
@@ -1049,4 +1073,9 @@ table {
 }
 .main__photoboth-img:nth-of-type(5) {
   transform: translateX(-155%) translateY(55%) rotate(46.45deg);
+}
+
+html, body {
+  overflow-x: clip;
+  font-family: "PFAgoraSansPro";
 }/*# sourceMappingURL=style.css.map */

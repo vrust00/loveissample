@@ -239,6 +239,70 @@ table {
     top: 115vw;
   }
 }
+.main__photo:nth-of-type(7) {
+  z-index: 10;
+  opacity: 0.5;
+  top: 366.5vw;
+  width: 18%;
+  left: 7.5%;
+  transform: rotate(38deg);
+}
+@media (max-width: 768px) {
+  .main__photo:nth-of-type(7) {
+    left: 6.3%;
+    width: 18.5%;
+    top: 368vw;
+  }
+}
+@media (max-width: 600px) {
+  .main__photo:nth-of-type(7) {
+    left: 6.3%;
+    width: 18.5%;
+    top: 365vw;
+  }
+}
+@media (max-width: 500px) {
+  .main__photo:nth-of-type(7) {
+    left: 6.3%;
+    width: 18.5%;
+    top: 363vw;
+  }
+}
+.main__photo:nth-of-type(8) {
+  opacity: 0;
+  z-index: 10;
+  top: 372vw;
+  width: 18%;
+  left: 6.3%;
+  transform: rotate(38deg);
+}
+@media (max-width: 900px) {
+  .main__photo:nth-of-type(8) {
+    top: 370vw;
+    left: 6.5%;
+  }
+}
+@media (max-width: 768px) {
+  .main__photo:nth-of-type(8) {
+    left: 6.3%;
+    width: 18.5%;
+    top: 368vw;
+  }
+}
+@media (max-width: 600px) {
+  .main__photo:nth-of-type(8) {
+    left: 6.3%;
+    width: 18.5%;
+    top: 365vw;
+  }
+}
+@media (max-width: 500px) {
+  .main__photo:nth-of-type(8) {
+    left: 6.3%;
+    width: 18.5%;
+    top: 363vw;
+  }
+}
 .main__video {
   position: absolute;
   z-index: 0;

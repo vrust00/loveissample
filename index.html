@@ -10,21 +10,20 @@
 <body>
    <div class="main">
 
-      <!-- ФОН -->
-      <img src="images/background-desktop.svg" alt="" class="main__bg">
+      
+      <picture>
+         <source media="(max-width: 450px)" srcset="images/background-mobile.svg">
+         <img src="images/background-desktop.svg" alt="Фон" class="main__bg">
+      </picture>
+      
 
-      <!-- ТЕКСТЫ -->
-      <h1 class="main__slogan">
-         Открой для себя моменты нежности и близости
-      </h1>
-      <h2 class="main__name">Иван</h2>
-      <h2 class="main__and">&</h2>
-      <h2 class="main__name">Ариша</h2>
 
-      <h1 class="main__title-tv">Любовь это...</h1>
-      <h1 class="main__title-eng-tv">Love is...</h1>
-      <h1 class="main__subtitle-tv">...пересматривать совместные видео</h1>
-      <h1 class="main__subtitle-eng-tv">...watching videos together</h1>
+
+      
+      
+      
+
+      
 
       <!-- ===== ГРУППА 1: ГЛАВНЫЙ БЛОК (фото 1–2) ===== -->
       <div class="main__photo-main-block">
@@ -33,14 +32,8 @@
       </div>
 
       <!-- ===== ГРУППА 2: КОЛЛАЖ 1 (фото 3–6) ===== -->
-      <div class="main__photo-collage-1">
-         <img src="photos/photo3.jpg" alt="" class="main__photo-collage-img">
-         <img src="photos/photo4.jpg" alt="" class="main__photo-collage-img">
-         <img src="photos/photo5.jpg" alt="" class="main__photo-collage-img">
-         <img src="photos/photo6.jpg" alt="" class="main__photo-collage-img">
-      </div>
-
-      <!-- ===== ГРУППА 3: КОЛЛАЖ 2 (фото 7–10) ===== -->
+      
+      
       
 
       <!-- ВИДЕО -->
@@ -49,7 +42,7 @@
       </video>
 
       <!-- ТАЙМЕР -->
-      <div class="main__timer">
+      <!-- <div class="main__timer">
          <h1 class="main__timer-title">Вместе уже</h1>
          <div class="main__timer-nums">
             <span class="main__timer-number" id="years">00</span>:
@@ -67,117 +60,67 @@
             <span class="main__timer-label" id="minutes-label">МИНУТ</span>
             <span class="main__timer-label" id="seconds-label">СЕКУНД</span>
          </div>
-      </div>
+      </div> -->
 
-      <!-- КНОПКА И КОНТЕЙНЕР С ЛЕНТОЙ -->
+
+      <div class="main__letter">
+         <button class="main__letter-btn" id="letter-btn">
+            <img src="images\letter-close.svg" alt="" class="main__letter-close">
+         </button>
+            <img src="images\letter-open.svg" alt="" class="main__letter-open">
+            
+
+             <img src="images\letter-card.svg" alt="" class="main__letter-card">
+
+            <img src="images\letter-valentine.svg" alt="" class="main__letter-valentine">
+         </button>
+
+         
+        
+            
+            
+         
+      </div>
       <div class="main__photoboth">
+         
          <button class="main__photoboth-btn" id="photoboth-btn">Печать</button>
          <div class="main__photoboth-container hide" id="photoline">
             <img src="images/photo-line.svg" alt="" class="main__photoline">
-            <img src="photos/photo7.jpg" alt="" class="main__photoboth-img">
-            <img src="photos/photo8.jpg" alt="" class="main__photoboth-img">
-            <img src="photos/photo9.jpg" alt="" class="main__photoboth-img">
-            <img src="photos/photo10.jpg" alt="" class="main__photoboth-img">
-         </div>
-      </div>
-
-      
-         <h1 class="main__title-collage">Любовь это...</h1>
-         <h1 class="main__title-eng-collage">Love is...</h1>
-      
-      
-      <div class="main__desc-container">
-         <div class="main__desc-collage">
-            <h2 class="main__desc">...объятия</h2>
-            <h2 class="main__desc-eng">...EMBRACE</h2>
-         </div>
-
-         <div class="main__desc-collage">
-               <h2 class="main__desc">...готовить вместе</h2>
-               <h2 class="main__desc-eng">...COOK TOGETHER</h2>
-         </div>
-
-         <div class="main__desc-collage">
-               <h2 class="main__desc">...удивлять</h2>
-               <h2 class="main__desc-eng">...SURPRISE</h2>
-         </div>
-
-         <div class="main__desc-collage">
-               <h2 class="main__desc">...мечтать</h2>
-               <h2 class="main__desc-eng">...DREAM</h2>
-         </div>
+            <img src="photos/photo1.jpg" alt="" class="main__photoboth-img">
+            <img src="photos/photo2.jpg" alt="" class="main__photoboth-img">
+            <img src="photos/photo3.jpg" alt="" class="main__photoboth-img">
+            <img src="photos/photo4.jpg" alt="" class="main__photoboth-img">
       </div>
       
+      
 
 
 
          
          
-      <div class="main__photo-collage-2">
-         
-
-
-         <img src="photos/photo11.jpg" alt="" class="main__photo-collage-img">
-         <img src="photos/photo12.jpg" alt="" class="main__photo-collage-img">
-         <img src="photos/photo13.jpg" alt="" class="main__photo-collage-img">
-         <img src="photos/photo14.jpg" alt="" class="main__photo-collage-img">
-
-         
-      </div>
+      
    </div>
 
    <script src="js/timer.js"></script>
    <script src="js/photoboth.js"></script>
-
+   <script src="js\letter.js"></script>
 
 
    <video autoplay muted loop playsinline class="main__video2">
-         <source src="videos\video1.mp4">
+         <source src="videos\video2.mp4">
    </video>
 
-   <h1 class="main__title-video2">Любовь это воспоминания...</h1>
-         <h1 class="main__title-video2-eng">Love is memories...</h1>
+   
 
 
-
-   <div class="main__photo-timeline">
-      <img class="main__photo-timeline-img" src="photos\photo15.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo16.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo17.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo18.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo19.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo20.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo21.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo22.jpg"></img>
-      <img class="main__photo-timeline-img" src="photos\photo23.jpg"></img>
-      
-
-   </div>
-   <div class="main__photo-timeline-desc-container">
-         <div class="main__photo-timeline-desc">Первая встреча</div>
-         <div class="main__photo-timeline-desc">Первое свидание</div>
-         <div class="main__photo-timeline-desc">Первый поцелуй</div>
-         <div class="main__photo-timeline-desc">Первый поход в кино</div>
-         <div class="main__photo-timeline-desc">Годовщина</div>
-         <div class="main__photo-timeline-desc">Знакомство с родителями</div>
-         <div class="main__photo-timeline-desc">Путешествие</div>
-         
-         <div class="main__photo-timeline-desc">Отдыхаем вместе</div>
-         <div class="main__photo-timeline-desc">Готовим вместе</div>
-         
-      
-   </div>
+   
+   
 
 
-   <img src="photos\photo6.jpg" alt="" class="main__about-photo">
-   <div class="main__about-description">Алексей и Анна познакомились три года назад в небольшом кафе. Анна случайно уронила папку со скетчами, а Алексей помог ей собрать бумаги. Они разговорились: оказалось, что оба увлекаются визуальным искусством и архитектурой, любят одни и те же места в городе и одинаково проводят свободное время.
-Разговор затянулся до закрытия кафе. С этого дня они стали встречаться чаще: много гуляли, поддерживали друг друга в работе и легко находили общий язык. Со временем их отношения стали спокойными и доверительными — им было комфортно и интересно вместе.
-Через три года Алексей снова пригласил Анну в то же кафе. Он показал ей набросок дома, который спроектировал для них двоих, и сделал предложение. Анна сразу согласилась.</div>
-
-   <img src="photos\photo5.jpg" alt="" class="main__finish-photo">
+   
 
 
-   <h1 class="main__subslogan">Поделиться нашей историей</h1>
+   
 
    <img src="images\qr.svg" alt="" class="main__qr">
 </body>

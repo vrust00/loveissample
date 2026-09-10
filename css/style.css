@@ -168,34 +168,34 @@ body.loading {
 }
 @media (max-width: 450px) {
   .main__video1 {
-    top: 510dvh;
+    top: 510vh;
     width: 60%;
     left: 18%;
   }
 }
 @media (max-width: 391px) {
   .main__video1 {
-    top: 443dvh;
+    top: 443vh;
   }
 }
 @media (max-width: 371px) {
   .main__video1 {
-    top: 421dvh;
+    top: 421vh;
   }
 }
 @media (max-width: 361px) {
   .main__video1 {
-    top: 410dvh;
+    top: 410vh;
   }
 }
 @media (max-width: 341px) {
   .main__video1 {
-    top: 386dvh;
+    top: 386vh;
   }
 }
 @media (max-width: 321px) {
   .main__video1 {
-    top: 365dvh;
+    top: 365vh;
   }
 }
 
@@ -226,29 +226,29 @@ body.loading {
 }
 @media (max-width: 449px) {
   .main__video2 {
-    top: 1030dvh;
+    top: 1030vh;
     width: 90%;
     left: 1%;
   }
 }
 @media (max-width: 391px) {
   .main__video2 {
-    top: 900dvh;
+    top: 900vh;
   }
 }
 @media (max-width: 371px) {
   .main__video2 {
-    top: 855dvh;
+    top: 855vh;
   }
 }
 @media (max-width: 341px) {
   .main__video2 {
-    top: 785dvh;
+    top: 785vh;
   }
 }
 @media (max-width: 321px) {
   .main__video2 {
-    top: 735dvh;
+    top: 735vh;
   }
 }
 

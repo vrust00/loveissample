@@ -495,7 +495,7 @@ body.loading {
 }
 @media (max-width: 450px) {
   .main__timer {
-    top: 830vw;
+    top: 720vw;
   }
 }
 

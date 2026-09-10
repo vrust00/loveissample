@@ -16,28 +16,11 @@
   @media (max-width: 600px) { top: 239vw; }
   @media (max-width: 500px) { top: 248vw; }
 
+  // Для всех телефонов — одно значение, видео остаётся на том же месте
   @media (max-width: 450px) {
-    top: clamp(505vh, 510vh, 510vh);
-
+    top: 970vw;
     width: 60%;
     left: 18%;
-  }
-  @media (max-width: 391px) {
-    top: clamp(435vh, 443vh, 443vh);
-    
-  }
-  @media (max-width: 371px) {
-    top: clamp(415vh, 421vh, 421vh);
-  }
-
-  @media (max-width: 361px) {
-    top: clamp(405vh, 410vh, 410vh);
-  }
-  @media (max-width: 341px) {
-    top: clamp(380vh, 386vh, 386vh);
-  }
-  @media (max-width: 321px) {
-    top: clamp(360vh, 365vh, 365vh);
   }
 }
 
@@ -57,25 +40,13 @@
     top: clamp(393vw, 397vw, 397vw);
   }
   @media (max-width: 500px) {
-    top: clamp(395vw, 400vw, 400vw);
-    top:440vw;
+    top: 440vw;
   }
 
-  @media (max-width: 449px) {
-    top: 1030vh;
+  // Для всех телефонов — одно значение
+  @media (max-width: 450px) {
+    top: 1955vw;
     width: 90%;
     left: 1%;
-  }
-  @media (max-width: 391px) {
-    top: clamp(895vh, 900vh, 900vh);
-  }
-  @media (max-width: 371px) {
-    top: clamp(850vh, 855vh, 855vh);
-  }
-  @media (max-width: 341px) {
-    top: clamp(780vh, 785vh, 785vh);
-  }
-  @media (max-width: 321px) {
-    top: clamp(730vh, 735vh, 735vh);
   }
 }

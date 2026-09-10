@@ -8,8 +8,9 @@
   z-index: 10;
   width: 100%;
 
+  // Для всех телефонов ≤ 450px — одно значение, таймер остаётся на месте
   @media (max-width: 450px) {
-    top: 720vw;
+    top: 760vw;
   }
 }
 
@@ -72,6 +73,7 @@
   display: inline;
 }
 
+// Скрываем двоеточия на мобильных для компактности
 @media (max-width: 450px) {
   .main__timer-separator {
     display: none;

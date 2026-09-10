@@ -19,11 +19,8 @@
   @media (max-width: 768px)  { top: clamp(305vw, 314vw, 314vw); }
   @media (max-width: 600px)  { top: clamp(300vw, 310vw, 310vw); }
 
-  @media (max-width: 449px)  { top: clamp(655dvh, 656dvh, 657dvh); }
-  @media (max-width: 391px)  { top: clamp(565dvh, 572dvh, 572dvh); }
-  @media (max-width: 371px)  { top: clamp(540dvh, 542dvh, 542dvh); }
-  @media (max-width: 341px)  { top: clamp(495dvh, 498dvh, 498dvh); }
-  @media (max-width: 321px)  { top: clamp(465dvh, 469dvh, 469dvh); }
+  // Для всех телефонов ≤ 450px — одно значение, блок остаётся на месте
+  @media (max-width: 450px)  { top: 1248vw; }
 }
 
 .main__photoboth-btn {

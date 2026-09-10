@@ -23,7 +23,10 @@
     
   }
   @media (max-width: 390px) {
-    top: clamp(910vw, 916vw, 925vw);
+    top: clamp(915vw, 920vw, 925vw);
+  }
+  @media (max-width: 340px) {
+    top: clamp(910vw, 915vw, 920vw);
   }
 }
 

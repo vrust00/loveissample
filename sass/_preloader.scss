@@ -1,6 +1,6 @@
 .preloader {
   position: fixed;
-  top: -10vh;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 200vh;
@@ -33,5 +33,5 @@
 
 // Чтобы страница не прокручивалась, пока грузится
 body.loading {
-  overflow: hidden;
+  overflow-y: clip;
 }

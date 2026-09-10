@@ -93,7 +93,7 @@ table {
 }
 .preloader {
   position: fixed;
-  top: -10vh;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 200vh;
@@ -124,7 +124,7 @@ table {
   }
 }
 body.loading {
-  overflow: hidden;
+  overflow-y: clip;
 }
 
 .main {
@@ -175,7 +175,12 @@ body.loading {
 }
 @media (max-width: 390px) {
   .main__video1 {
-    top: 916vw;
+    top: 920vw;
+  }
+}
+@media (max-width: 340px) {
+  .main__video1 {
+    top: 915vw;
   }
 }
 

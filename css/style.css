@@ -168,14 +168,14 @@ body.loading {
 }
 @media (max-width: 450px) {
   .main__video1 {
-    top: 977vw;
+    top: 927vw;
     width: 60%;
     left: 18%;
   }
 }
 @media (max-width: 390px) {
   .main__video1 {
-    top: 966vw;
+    top: 916vw;
   }
 }
 

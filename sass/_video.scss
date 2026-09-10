@@ -17,12 +17,13 @@
   @media (max-width: 500px) { top: 238vw; }
 
   @media (max-width: 450px) {
-    top: clamp(977vw, 977vw, 980vw);
+    top: clamp(927vw, 927vw, 930vw);
     width: 60%;
     left: 18%;
+    
   }
   @media (max-width: 390px) {
-    top: clamp(960vw, 966vw, 975vw);
+    top: clamp(910vw, 916vw, 925vw);
   }
 }
 

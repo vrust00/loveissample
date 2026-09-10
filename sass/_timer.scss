@@ -1,0 +1,79 @@
+// ============================================================
+// ТАЙМЕР
+// ============================================================
+
+.main__timer {
+  top: 170vw;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+
+  @media (max-width: 450px) {
+    top: 830vw;
+  }
+}
+
+.main__timer-title {
+  margin-top: 15vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: right;
+  font-size: 10vw;
+  color: $color-dark-red;
+  position: relative;
+  z-index: 2;
+  font-family: 'Soledago';
+
+  @media (max-width: 450px) {
+    text-wrap: nowrap;
+    font-size: 16vw;
+  }
+}
+
+.main__timer-nums {
+  width: fit-content;
+  text-align: center;
+  font-size: 6vw;
+  align-items: top;
+  margin-left: auto;
+  margin-top: 7vw;
+  margin-right: auto;
+  font-family: 'Soledago', sans-serif;
+  color: $color-dark-red;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+
+.main__timer-labels {
+  text-align: center;
+  font-size: 3vw;
+  display: flex;
+  font-family: 'Soledago', sans-serif;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: $color-dark-red;
+  position: relative;
+  z-index: 2;
+}
+
+.main__timer-number {
+  width: 4ch;
+}
+
+.main__timer-label {
+  width: 9ch;
+}
+
+.main__timer-separator {
+  display: inline;
+}
+
+@media (max-width: 450px) {
+  .main__timer-separator {
+    display: none;
+  }
+}

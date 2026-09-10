@@ -1,0 +1,61 @@
+// ============================================================
+// ВИДЕО 1 И ВИДЕО 2
+// ============================================================
+
+.main__video1 {
+  position: absolute;
+  z-index: -10;
+  height: auto;
+  top: 244vw;
+  width: 25%;
+  left: 28%;
+  clip-path: polygon(0% 4%, 100% 4%, 100% 86%, 0% 86%);
+
+  @media (max-width: 910px) { top: 242vw; }
+  @media (max-width: 768px) { top: 240vw; }
+  @media (max-width: 600px) { top: 239vw; }
+  @media (max-width: 500px) { top: 238vw; }
+
+  @media (max-width: 450px) {
+    top: clamp(977vw, 977vw, 980vw);
+    width: 60%;
+    left: 18%;
+  }
+  @media (max-width: 390px) {
+    top: clamp(960vw, 966vw, 975vw);
+  }
+}
+
+.main__video2 {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+  top: clamp(400vw, 402vw, 405vw);
+  transform: rotate(15deg);
+  width: 30.5%;
+  left: 23.2%;
+
+  @media (max-width: 768px) {
+    top: clamp(393vw, 397vw, 400vw);
+  }
+  @media (max-width: 600px) {
+    top: clamp(393vw, 397vw, 397vw);
+  }
+  @media (max-width: 500px) {
+    top: clamp(390vw, 393vw, 395vw);
+  }
+  @media (max-width: 450px) {
+    top: 1880vw;
+    width: 90%;
+    left: 1%;
+  }
+  @media (max-width: 390px) {
+    top: clamp(1870vw, 1875vw, 1878vw);
+  }
+  @media (max-width: 370px) {
+    top: clamp(1860vw, 1865vw, 1870vw);
+  }
+  @media (max-width: 340px) {
+    top: clamp(1850vw, 1855vw, 1860vw);
+  }
+}

@@ -1,6 +1,15 @@
-@import 'reset.scss';
-@import '_fonts.scss';
-@import '_main.scss';
+
+@import 'reset';
+@import '_fonts';
+
+// Модули
+@import '_preloader';
+@import '_variables';
+@import '_main';
+@import '_video';
+@import '_photoboth';
+@import '_letter';
+@import '_timer';
 
 html, body {
    overflow-x: clip;

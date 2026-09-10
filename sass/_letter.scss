@@ -1,0 +1,129 @@
+// ============================================================
+// ПИСЬМО (ОТКРЫВАЮЩАЯСЯ АНИМАЦИЯ)
+// ============================================================
+
+// ----- КНОПКА ПИСЬМА -----
+.main__letter-btn {
+  background-color: transparent;
+  border-color: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+// ----- КОНТЕЙНЕР ПИСЬМА -----
+.main__letter {
+  position: absolute;
+  top: 198vw;
+  left: 30%;
+  width: 40%;
+  z-index: 10;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 800px;
+
+  @media (max-width: 450px) {
+    width: 70%;
+    left: 15%;
+    top: 750vw;
+  }
+
+  // ----- ЗАКРЫТОЕ ПИСЬМО -----
+  &-close {
+    opacity: 1;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    animation: pulse-letter 2.5s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+    filter: drop-shadow(0 1px 30px rgba(147, 22, 22, 0.749));
+  }
+
+  // ----- ОТКРЫТОЕ ПИСЬМО -----
+  &-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease, box-shadow 0.6s ease;
+    border-radius: 4px;
+    z-index: 2;
+    transform: translateY(-20%);
+  }
+
+  // ----- ВЫЛЕТАЮЩИЕ ЭЛЕМЕНТЫ -----
+  &-card,
+  &-valentine {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(50%) scale(0);
+    opacity: 0;
+    transition: all 0.8s;
+    pointer-events: none;
+    z-index: 5;
+    width: 40%;
+  }
+
+  &-valentine {
+    transform: translateX(50%);
+    top: 10%;
+    width: 20%;
+    transition-delay: 0.3s;
+  }
+}
+
+// ----- АНИМАЦИЯ ПУЛЬСАЦИИ -----
+@keyframes pulse-letter {
+  0%   { transform: scale(1) rotate(0deg); }
+  50%  { transform: scale(1.04) rotate(1.5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+// ----- СОСТОЯНИЕ "ОТКРЫТО" -----
+.main__letter.open {
+  .main__letter-close {
+    opacity: 0;
+    pointer-events: none;
+    animation: none;
+  }
+
+  .main__letter-open {
+    opacity: 1;
+    pointer-events: none;
+  }
+
+  .main__letter-card {
+    transform: translateY(-100%) translateX(-120%);
+    opacity: 1;
+    width: 70%;
+    pointer-events: none;
+
+    @media (max-width: 450px) {
+      transform: translateY(-100%) translateX(-90%);
+    }
+  }
+
+  .main__letter-valentine {
+    transform: translateY(-80%) translateX(30%);
+    width: 60%;
+    opacity: 1;
+    pointer-events: none;
+
+    @media (max-width: 450px) {
+      transform: translateY(-100%) translateX(5%);
+    }
+  }
+}
+
+// ----- ЭФФЕКТ ПРИ НАВЕДЕНИИ -----
+.main__letter-btn:hover .main__letter-close {
+  animation: none;
+  transform: scale(1.08);
+  filter: drop-shadow(0 1px 120px rgb(133, 20, 20));
+  transition: transform 0.4s ease, filter 0.3s ease;
+}

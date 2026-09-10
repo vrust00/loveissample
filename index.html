@@ -9,7 +9,9 @@
 </head>
 <body>
    <div class="main">
-
+      <div class="preloader" id="preloader">
+         <div class="preloader__spinner"></div>
+      </div>
       
       <picture>
          <source media="(max-width: 450px)" srcset="images/background-mobile.svg">
@@ -63,7 +65,7 @@
       </div>
 
 
-      <div class="main__letter">
+      <!-- <div class="main__letter">
          <button class="main__letter-btn" id="letter-btn">
             <img src="images\letter-close.svg" alt="" class="main__letter-close">
          </button>
@@ -75,12 +77,7 @@
             <img src="images\letter-valentine.svg" alt="" class="main__letter-valentine">
          </button>
 
-         
-        
-            
-            
-         
-      </div>
+      </div> -->
       <div class="main__photoboth">
          
          <button class="main__photoboth-btn" id="photoboth-btn">Печать</button>
@@ -104,6 +101,7 @@
    <script src="js/timer.js"></script>
    <script src="js/photoboth.js"></script>
    <script src="js\letter.js"></script>
+   <script src="js\preloader.js"></script>
 
 
    <video autoplay muted loop playsinline class="main__video2">

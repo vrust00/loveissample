@@ -14,19 +14,30 @@
   @media (max-width: 910px) { top: 242vw; }
   @media (max-width: 768px) { top: 240vw; }
   @media (max-width: 600px) { top: 239vw; }
-  @media (max-width: 500px) { top: 238vw; }
+  @media (max-width: 500px) { top: 248vw; }
 
   @media (max-width: 450px) {
-    top: clamp(927vw, 927vw, 930vw);
+    top: clamp(505dvh, 510dvh, 510dvh);
+
     width: 60%;
     left: 18%;
+  }
+  @media (max-width: 391px) {
+    top: clamp(435dvh, 443dvh, 443dvh);
     
   }
-  @media (max-width: 390px) {
-    top: clamp(915vw, 920vw, 925vw);
+  @media (max-width: 371px) {
+    top: clamp(415dvh, 421dvh, 421dvh);
   }
-  @media (max-width: 340px) {
-    top: clamp(910vw, 915vw, 920vw);
+
+  @media (max-width: 361px) {
+    top: clamp(405dvh, 410dvh, 410dvh);
+  }
+  @media (max-width: 341px) {
+    top: clamp(380dvh, 386dvh, 386dvh);
+  }
+  @media (max-width: 321px) {
+    top: clamp(360dvh, 365dvh, 365dvh);
   }
 }
 
@@ -46,20 +57,25 @@
     top: clamp(393vw, 397vw, 397vw);
   }
   @media (max-width: 500px) {
-    top: clamp(390vw, 393vw, 395vw);
+    top: clamp(395vw, 400vw, 400vw);
+    top:440vw;
   }
-  @media (max-width: 450px) {
-    top: 1880vw;
+
+  @media (max-width: 449px) {
+    top: 1030dvh;
     width: 90%;
     left: 1%;
   }
-  @media (max-width: 390px) {
-    top: clamp(1870vw, 1875vw, 1878vw);
+  @media (max-width: 391px) {
+    top: clamp(895dvh, 900dvh, 900dvh);
   }
-  @media (max-width: 370px) {
-    top: clamp(1860vw, 1865vw, 1870vw);
+  @media (max-width: 371px) {
+    top: clamp(850dvh, 855dvh, 855dvh);
   }
-  @media (max-width: 340px) {
-    top: clamp(1850vw, 1855vw, 1860vw);
+  @media (max-width: 341px) {
+    top: clamp(780dvh, 785dvh, 785dvh);
+  }
+  @media (max-width: 321px) {
+    top: clamp(730dvh, 735dvh, 735dvh);
   }
 }

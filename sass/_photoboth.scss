@@ -18,9 +18,12 @@
   @media (max-width: 1200px) { top: clamp(310vw, 315vw, 315vw); }
   @media (max-width: 768px)  { top: clamp(305vw, 314vw, 314vw); }
   @media (max-width: 600px)  { top: clamp(300vw, 310vw, 310vw); }
-  @media (max-width: 450px)  { top: clamp(1190vw, 1193vw, 1195vw); }
-  @media (max-width: 400px)  { top: clamp(1185vw, 1187vw, 1188vw); }
-  @media (max-width: 360px)  { top: clamp(1180vw, 1178vw, 1180vw); }
+
+  @media (max-width: 449px)  { top: clamp(655dvh, 656dvh, 657dvh); }
+  @media (max-width: 391px)  { top: clamp(565dvh, 572dvh, 572dvh); }
+  @media (max-width: 371px)  { top: clamp(540dvh, 542dvh, 542dvh); }
+  @media (max-width: 341px)  { top: clamp(495dvh, 498dvh, 498dvh); }
+  @media (max-width: 321px)  { top: clamp(465dvh, 469dvh, 469dvh); }
 }
 
 .main__photoboth-btn {
@@ -92,7 +95,7 @@
     transform: translateX(-370%) translateY(258%) rotate(46.45deg);
 
     @media (max-width: 450px) {
-      transform: translateX(103%) translateY(-200%) rotate(46.45deg);
+      transform: translateX(102%) translateY(-200%) rotate(46.45deg);
     }
   }
   &:nth-of-type(3) {
@@ -106,7 +109,7 @@
     transform: translateX(-225%) translateY(120%) rotate(46.45deg);
 
     @media (max-width: 450px) {
-      transform: translateX(245%) translateY(-340%) rotate(46.45deg);
+      transform: translateX(246%) translateY(-339%) rotate(46.45deg);
     }
   }
   &:nth-of-type(5) {
